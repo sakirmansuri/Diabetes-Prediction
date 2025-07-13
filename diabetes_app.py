@@ -84,4 +84,4 @@ if model_name == "XGBClassifier":
     st.info(" You're using a XGradient Boosting model, which is an ensemble of decision trees.")
 
 st.markdown("---")
-st.markdown(" Built with Streamlit |  Model: RandomForest or XGBoost |  Sakir's Portfolio Project")
+st.markdown(" Built with Streamlit |  Model: XGBoost |  Sakir's Portfolio Project")
