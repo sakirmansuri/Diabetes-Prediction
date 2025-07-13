@@ -15,7 +15,7 @@ from sklearn.neighbors import KNeighborsClassifier
 from sklearn.tree import DecisionTreeClassifier
 from xgboost import XGBClassifier
 
-df = pd.read_csv("diabetes.csv")
+df = pd.read_csv("Pima_Indians_Diabetes_Dataset.csv")
 
 
 cols_with_zeros = ['Glucose', 'BloodPressure', 'SkinThickness', 'Insulin', 'BMI']
@@ -139,8 +139,8 @@ plt.close()
 doc.add_heading("Feature Importance - Logistic Regression", level=1)
 doc.add_picture("feature_importance_logreg.png", width=Inches(5.5))
 
-doc.save("Diabetes_Prediction_Report_Enhanced.docx")
-print(" Report saved as: Diabetes_Prediction_Report_Enhanced.docx")
+doc.save("Diabetes_Prediction_Report.docx")
+print(" Report saved as: Diabetes_Prediction_Report.docx")
 
 import joblib
 joblib.dump(model, "diabetes_model.pkl")
