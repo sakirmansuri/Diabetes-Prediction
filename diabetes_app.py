@@ -4,8 +4,7 @@ import numpy as np
 import joblib
 import matplotlib.pyplot as plt
 import seaborn as sns
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.preprocessing import StandardScaler
+
 
 model = joblib.load("diabetes_model.pkl")
 scaler = joblib.load("scaler.pkl")
